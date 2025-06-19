@@ -1,17 +1,17 @@
-node_modules
+# Node modules
+node_modules/
+
+# Hardhat artifacts and cache
+artifacts/
+cache/
+
+# dotenv environment variables file
 .env
 
-# Hardhat files
-/cache
-/artifacts
+# Ignition logs (якщо це логи)
+ignition/
 
-# TypeChain files
-/typechain
-/typechain-types
-
-# solidity-coverage files
-/coverage
-/coverage.json
-
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# Optional: IDE, OS і інші тимчасові файли
+.vscode/
+.DS_Store
+*.log
