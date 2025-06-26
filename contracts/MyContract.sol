@@ -22,6 +22,13 @@ contract BestOfTheBest is ERC20, ERC20Burnable, ERC20Pausable, AccessControl, ER
         _grantRole(MINTER_ROLE, minter);
     }
 
+
+    uint256 public constant MAX_SUPPLY = 1_000_000 * 10 ** 18;
+    function burnMyTokens(uint256 amount) external {
+        _burn(msg.sender, amount);
+    }
+
+
     mapping(address => bool) public blacklisted;
 
 
